@@ -12,8 +12,8 @@ const Page = () =>
 	falk
 		.init('Page')
 		.fetch('https://raw.githubusercontent.com/FalkZ/gmar/master/content/page.md')
-		.chop('##', { extract: true, merge: true })
-		.construct({ content: 'extract' })
+		.chop('##', { extract: true })
+		.construct({ content: 'extract', className: 'extract' }, {})
 		.tag('p')
 		.prepare('span')
 		.logger()

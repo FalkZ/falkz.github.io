@@ -9,7 +9,7 @@ export default function(tag) {
 		if (Array.isArray(input)) {
 			input.map((properties, index) => {
 				let content = properties.content
-				const tempObj = { ...properties }
+				const tempObj = { ...properties, key: index }
 				delete tempObj.content
 				output[index] = createElement(tag, tempObj, content)
 				return null
