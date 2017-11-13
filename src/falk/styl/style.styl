@@ -1,0 +1,25 @@
+@import '../../variables.styl'
+
+if (general)
+	@import './general.styl'
+
+if (helper)
+	@import './helper.css'
+
+if (flow)
+	@import './flow.styl'
+
+body
+	background bodyBackground
+
+	*
+		color bodyFontColor
+
+h1, h2, h3, h4, h5, h6
+	color headingFontColor
+
+header
+	background headerBackground
+
+	*
+		color headerFontColor

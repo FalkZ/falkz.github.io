@@ -1,0 +1,24 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" overflow='visible'>
+  <defs>
+
+    <mask id='mask' maskUnits="userSpaceOnUse" x='0' y='0' height='100%' >
+
+      <path d="M 55 10 L 80 50 L 55 90 L 200 90 L 260 50 L 200 10 Z" stroke-linecap='round' stroke-linejoin="round"
+      stroke-width='20' stroke='white' fill='white'/>
+      <path d="M0 0 L 20 10 L 80 50 L 20 90 L 0 90 Z" stroke-linecap='round' stroke-linejoin="round"
+      stroke-width='20' stroke='black' fill='black'/>
+    </mask>
+
+
+    <marker id="arrow" markerWidth="1" markerHeight="1" refX="1" refY="50" orient="auto" markerUnits="strokeWidth" viewBox="0 0 100 100">
+      <path d="M0 0 L 20 10 L 80 50 L 20 90 L 0 90 Z" stroke-linecap='round' stroke-linejoin="round"
+      stroke-width='20' stroke='#00aadd' fill='#00aadd'/>
+    </marker>
+
+    <marker id="cutin" markerWidth="1" markerHeight="1" refX="99" refY="50" orient="auto" markerUnits="strokeWidth" viewBox="0 0 100 100">
+      <rect width="100%" height="100%" fill='#00aadd' stroke='none' mask='url(#mask)'/>
+    </marker>
+  </defs>
+
+  <line x1="50" y1="0" x2="50" y2="100%" stroke="#00aadd" stroke-width="80" marker-end="url(#arrow)" marker-start="url(#cutin)" />
+</svg>

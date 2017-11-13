@@ -12,6 +12,7 @@ export default function(tag) {
 				const tempObj = { ...properties, key: index }
 				delete tempObj.content
 				output[index] = createElement(tag, tempObj, content)
+
 				return null
 			})
 		} else {

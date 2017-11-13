@@ -14,7 +14,7 @@
 	"extendPref": false,
 	"globalDupe": false,
 	"groupOutputByFile": true,
-	"indentPref": "tabStopChar",
+	"indentPref": "space",
 	"leadingZero": "never",
 	"maxErrors": false,
 	"maxWarnings": false,

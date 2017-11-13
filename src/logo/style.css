@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'gmar';
+  src:  url('fonts/gmar.eot?h4o60f');
+  src:  url('fonts/gmar.eot?h4o60f#iefix') format('embedded-opentype'),
+    url('fonts/gmar.ttf?h4o60f') format('truetype'),
+    url('fonts/gmar.woff?h4o60f') format('woff'),
+    url('fonts/gmar.svg?h4o60f#gmar') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="gmar-"], [class*=" gmar-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'gmar' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.gmar-Joker:before {
+  content: "\e900";
+}

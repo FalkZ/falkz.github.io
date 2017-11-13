@@ -1,0 +1,16 @@
+.Falk.Button {
+	border: none;
+	background: none;
+	cursor: pointer;
+	transition: -webkit-transform 0.1s ease-out;
+	transition: -ms-transform 0.1s ease-out;
+	transition: transform 0.1s ease-out, filter 0.1s ease-out;
+	outline: none;
+
+	&:hover:not(:active) {
+		transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		filter: brightness(120%);
+	}
+}
