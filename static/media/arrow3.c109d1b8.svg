@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="100" height="100" viewBox="0 45 100 100" >
+
+     <defs>
+<mask id='arrow' maskUnits="userSpaceOnUse" x='0' y='0' height='100%' >
+  <path d="M10 55 L50 80 L090 55  L090 200 L50 260 L10 200 Z" stroke-linecap='round' stroke-linejoin="round"
+  stroke-width='20' stroke='white' fill='white'/>
+  <path  x='0' y='100%'  d="M10 20 L50 80 L090 20 Z" stroke-linecap='round' stroke-linejoin="round"
+  stroke-width='20' stroke='black' fill='black'/>
+</mask>
+  </defs>
+
+
+  <rect  fill="#00aadd"  width="100%" height="100%" mask="url(#arrow)"/>
+
+</svg>

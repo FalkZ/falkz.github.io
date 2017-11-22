@@ -16,7 +16,7 @@ import "./logo/style.css";
 const Navigation = () =>
   Falk.init("Navigation")
     .fetch(
-      "https://raw.githubusercontent.com/FalkZ/gmar/master/content/page.md"
+      "https://raw.githubusercontent.com/FalkZ/gmar-2/master/content/page.md"
     )
     .chop("##", { extract: true, noZero: true })
     .construct({ content: "this.extract", className: "this.extract" }, {})
