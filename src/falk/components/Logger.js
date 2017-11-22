@@ -1,12 +1,31 @@
 import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
 import Log from 'react-log'
+
+import s from './Logger.css'
 
 //import Style from './Logger.css'
 
 const style = {
-	fontFamily: 'Roboto, sans-serif',
+	fontFamily: 'Roboto sans-serif',
 	color: '#3366cc'
 }
+
+const CSS = css =>
+	JSON.stringify(css)
+		.replace(/"/g, '')
+		.replace(/,/g, ';')
+		.replace(/_/g, ',')
+		.replace('{', '')
+		.replace('}', '')
+
+const styl = CSS({
+	'font-family': 'Roboto _ sans-serif',
+	color: '#3366cc'
+})
+
+console.log(styl)
+
 const h1 = {
 	...style,
 	fontFamily: 'Lato, sans-serif'
@@ -39,6 +58,12 @@ const sub = {
 	paddingLeft: '2px'
 }
 
+const getJSX = element => {
+	let temp = document.createElement('div')
+	ReactDOM.hydrate(element, temp)
+	return temp
+}
+
 const Header = props => {
 	let color = {}
 
@@ -57,10 +82,20 @@ const Header = props => {
 }
 
 const Element = props => (
-	<Log dir={props.dir}>
+	<Log log={props.log}>
 		<h2 style={{ ...h2, color: '#5a34ad', fontSize: '15px', padding: '0 3px' }}>
 			{'⚛ '}
 			<span style={{ ...h2, color: '#5a34ad' }}>{props.children}</span>
+		</h2>
+	</Log>
+)
+
+const logJSX = (log, icon, paddingLeft, paddingRight, props) => (
+	<Log log={log}>
+		<h2 style={h2}>
+			<span style={{ ...h2, paddingLeft, paddingRight }}>{icon}</span>
+			<span style={h2}>{props.index + ' '}</span>
+			<span style={light}>{props.children}</span>
 		</h2>
 	</Log>
 )
@@ -69,25 +104,35 @@ const State = props => {
 	let icon = '⇣ '
 	let paddingLeft = 0
 	let paddingRight = 0
-	if (props.index === '0') {
+	if (props.index === 0) {
 		icon = '+ '
 		paddingLeft = '4px'
 		paddingRight = '2px'
 	}
-	return (
-		<Log dir={props.dir}>
-			<h2 style={h2}>
-				<span style={{ ...h2, paddingLeft, paddingRight }}>{icon}</span>
-				<span style={h2}>{props.index + ' '}</span>
-				<span style={light}>{props.children}</span>
-			</h2>
-		</Log>
-	)
+
+	if (typeof props.log.$$typeof !== 'undefined') {
+		return logJSX(getJSX(props.log), icon, paddingLeft, paddingRight, props)
+	} else if (Array.isArray(props.log) && typeof props.log[0].$$typeof !== 'undefined') {
+		let el = []
+		props.log.map(log => el.push(getJSX(log)))
+
+		return logJSX(el, icon, paddingLeft, paddingRight, props)
+	} else {
+		return (
+			<Log log={props.log}>
+				<h2 style={h2}>
+					<span style={{ ...h2, paddingLeft, paddingRight }}>{icon}</span>
+					<span style={h2}>{props.index + ' '}</span>
+					<span style={light}>{props.children}</span>
+				</h2>
+			</Log>
+		)
+	}
 }
 
 const Error = props => {
 	return (
-		<Log dir={props.dir}>
+		<Log log={props.log}>
 			<p style={error}>{'⚠ ' + props.children}</p>
 		</Log>
 	)
@@ -96,22 +141,48 @@ const Error = props => {
 export default class Logger extends Component {
 	constructor(props) {
 		super(props)
-		this.state = {}
+		this.state = { error: false }
 	}
-	render = () => (
-		<span className={'Falk Logger'}>
-			<Header>Test</Header>
+	componentWillMount() {
+		let element = getJSX(this.props.element)
+		this.setState({ element })
+	}
 
-			<Error dir={this}>error</Error>
-			<State index="0">fetch</State>
-			<State index="1" dir={this.props}>
-				dop
-			</State>
-			<State index="2" dir={this.state}>
-				nop
-			</State>
+	logState = () =>
+		this.props.state.map((state, index) => {
+			if (typeof this.props.error !== 'undefined' && typeof this.props.error[index] !== 'undefined') {
+				this.setState({ error: true })
+				return (
+					<span key={index}>
+						<State index={index}>{this.props.action[index]}</State>
+						<Error log={this.props.error[index].cause}>{this.props.error[index].type}</Error>
+					</span>
+				)
+			} else if (this.state.error === false) {
+				return (
+					<State key={index} index={index} log={state}>
+						{this.props.action[index]}
+					</State>
+				)
+			}
+			return null
+		})
 
-			<Element index="5">react</Element>
-		</span>
-	)
+	logElement = () => {
+		if (this.state.error === false) {
+			return <Element log={this.state.element}>element</Element>
+		} else {
+			return null
+		}
+	}
+
+	render() {
+		return (
+			<span className={'Falk Logger'}>
+				<Header>{this.props.name}</Header>
+				{this.logState()}
+				{this.logElement()}
+			</span>
+		)
+	}
 }

@@ -1,7 +1,6 @@
 import { Component, createElement } from 'react'
 import objectUnfreeze from 'object-unfreeze'
 import { get, set } from 'lodash'
-import jsxToString from 'jsx-to-string'
 
 var _this
 var elements
@@ -90,14 +89,6 @@ const setState = () => {
 			elements.props.className = `Falk Provider ${className}`
 			elements = createElement('span', elements.props, elements.props.children)
 			_this.setState({ elements })
-
-			let logarr = jsxToString(elements)
-				.split('\n')
-				.slice(0, 0 + 6)
-
-			logarr.push('%c ...')
-			logarr = logarr.join('\n')
-			console.log(logarr, 'font-weight: bold; font-size: 15px; font-family: Roboto, sans-serif; color: #3366cc')
 		})
 		.catch(error => console.log(error))
 }
