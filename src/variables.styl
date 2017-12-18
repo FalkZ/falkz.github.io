@@ -12,7 +12,7 @@ headingFontColor = white
 // Background
 flowBackgroundColor = #ff4455
 headerBackground = rgba(black, .9)
-bodyBackground = linear-gradient(135deg, darken(#2050cc, 85%) 0%,black 100%);
+bodyBackground = linear-gradient(135deg, darken(#2050cc, 75%) 0%,black 100%);
 // Nav
 navDevider = '|'
 navSpacing = 30px
@@ -76,7 +76,14 @@ h2{
 	}*/
 }
 
+em{
+	//font-family Anton
+	font-weight bold !important
+	//text-transform uppercase
+	//font-size 1.2em
+	font-style normal
 
+}
 .language
 	position fixed
 	bottom 3px
@@ -100,3 +107,22 @@ h2{
 		}
 
 	}
+
+a{
+	display table
+
+	border-radius 3px
+	//border 2px solid white !important
+	color white !important
+	height 1.3
+	line-height 1.3
+	width auto
+	opacity 1
+	padding 0 5px
+	margin 5px 0
+	transition all 0.3s ease-out !important
+	&:hover{
+		background white
+		color darken(#2050cc, 85%) !important
+	}
+}
