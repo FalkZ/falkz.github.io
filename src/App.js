@@ -48,8 +48,16 @@ const SocialMedia = () =>
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = { language: "de" };
   }
+  toggleLanguage = d => {
+    console.log(this.state.language);
+    if (this.state.language === "de") {
+      this.setState({ language: "en" });
+    } else {
+      this.setState({ language: "de" });
+    }
+  };
 
   render() {
     return (
@@ -70,6 +78,8 @@ class App extends Component {
             </Layout>
           </header>
           <section>
+            <img src="https://scontent.fzrh1-1.fna.fbcdn.net/v/t1.0-9/21740477_351997008578631_5393184214769196740_n.jpg?oh=1b5fc3b8d9bc12c3993d3fc35fb87c87&amp;oe=5A703304" />
+
             <Two />
           </section>
         </Provider>

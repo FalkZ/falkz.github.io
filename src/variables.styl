@@ -8,11 +8,11 @@ flow = true
 themePrimary = #2050cc
 headerFontColor = white
 bodyFontColor = lightgrey
-headingFontColor = lightgrey
+headingFontColor = white
 // Background
 flowBackgroundColor = #ff4455
-headerBackground = rgba(black, .7)
-bodyBackground = darken(#263039, 90%)
+headerBackground = rgba(black, .9)
+bodyBackground = linear-gradient(135deg, darken(#2050cc, 85%) 0%,black 100%);
 // Nav
 navDevider = '|'
 navSpacing = 30px
@@ -40,12 +40,12 @@ i.gmar-Joker {
 		right 0
 		bottom 0
 		left 0
-		z-index 5
-		color lightgrey
-		text-align center
+		z-index -1
+		color black
+		text-importantalign center
 		text-shadow 0 3px 10px rgba(0, 0, 0, .16)
 		font-size 100vh
-		opacity .05
+
 		transform rotate(10deg)
 	}
 }
@@ -53,3 +53,50 @@ i.gmar-Joker {
 i.fa {
 	margin 0 10px
 }
+
+section{
+	line-height: 1.5
+	display block
+	max-width 700px
+	margin 0 auto
+	margin-top 80px
+}
+
+header{
+	border-bottom 0.3px solid darken(#2050cc, 85%) !important
+}
+h2{
+	margin-top 1em !important;
+	opacity: 1 !important;
+	/*&:after{
+		content: '';
+		border-bottom 3px solid white;
+		display: block;
+		width: 20px;
+	}*/
+}
+
+
+.language
+	position fixed
+	bottom 3px
+	right 3px
+	font-size 15px
+	border 1px solid white
+
+	border-radius 3px
+
+@media screen and (max-width: 1100px){
+	   header *{
+			 font-size 20px;
+			 navSpacing = 10px
+			 headerSpacing = 10px
+			 headerHeight = 60px
+
+		 }
+
+		header h1{
+			 font-size 30px;
+		}
+
+	}
