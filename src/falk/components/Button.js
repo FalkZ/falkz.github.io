@@ -16,6 +16,6 @@ export default class Button extends Component {
     if (typeof this.props.onClick === "function") {
       props.onClick = () => this.props.onClick(returnValue);
     }
-    return createElement("button", props);
+    return createElement("a", props);
   }
 }

@@ -50,14 +50,25 @@ class App extends Component {
     super(props);
     this.state = { language: "de" };
   }
-  toggleLanguage = d => {
-    console.log(this.state.language);
-    if (this.state.language === "de") {
-      this.setState({ language: "en" });
-    } else {
-      this.setState({ language: "de" });
-    }
-  };
+  componentWillMount() {
+    fetch(
+      "https://raw.githubusercontent.com/FalkZ/gmar-2/master/content/deutsch.md"
+    )
+      .then(response => response.text())
+      .then(text => {
+        let temp = text.split("\n## ");
+        let sections = [];
+        temp.map((section, index) => {
+          if (index !== 0) {
+            sections[index - 1] = {
+              name: section.split("\n")[0],
+              content: "\n## " + section
+            };
+          }
+          console.log(sections);
+        });
+      });
+  }
 
   render() {
     return (
@@ -70,7 +81,15 @@ class App extends Component {
             <h1>GIVE ME A REASON</h1>
 
             <Layout right>
-              <SocialMedia />
+              <Button href="https://www.facebook.com/GiveMeAReasonOfficial">
+                <Icon name="facebook" />
+              </Button>
+              <Button href="https://www.instagram.com/givemeareason_official/">
+                <Icon name="instagram" />
+              </Button>
+              <Button href="https://www.youtube.com/channel/UCCMwf_diPCwrFHMdAhFVBWg">
+                <Icon name="youtube" />
+              </Button>
             </Layout>
 
             <Layout right>
