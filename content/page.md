@@ -25,6 +25,6 @@ auf einen Road Trip live on Stage.
 
 ## contact/booking
 
-[givemeareason.official@gmail.com](mailto:givemeareason.official@gmail.com)
+[Mail givemeareason.official@gmail.com](mailto:givemeareason.official@gmail.com)
 
-[Facebook @GiveMeAReasonOfficial](www.facebook.com/GiveMeAReasonOfficial)
+[Facebook @GiveMeAReasonOfficial](https://www.facebook.com/GiveMeAReasonOfficial)

@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Anton')
 
 // Falk Styling
-general = true
-helper = true
+general = false
+helper = false
 flow = true
 // Colors
 themePrimary = #2050cc
 headerFontColor = white
-bodyFontColor = lightgrey
+bodyFontColor = white //lightgrey
 headingFontColor = white
 // Background
 flowBackgroundColor = #ff4455
 headerBackground = rgba(black, .9)
-bodyBackground = linear-gradient(135deg, darken(#2050cc, 75%) 0%,black 100%);
+bodyBackground = linear-gradient(35deg, darken(#2050cc, 75%) 0%,black 100%);
 // Nav
 navDevider = '|'
 navSpacing = 30px
@@ -29,10 +29,109 @@ headerHeight = 80px
 // Shadows
 headerShadow = 0 3px 10px rgba(0, 0, 0, .16), 0 2px 12px rgba(0, 0, 0, .23)
 
+
+
+header
+	background rgba(black, .9)
+	position fixed
+	top 0
+	left 0
+	right 0
+	z-index 5
+	padding-left 10px
+
+	height auto
+	box-shadow headerShadow
+
+	line-height 60px
+	min-height 60px
+	@media screen and (min-width: 1100px)
+		line-height 80px
+		min-height 80px
+
+		*
+			font-size 26px
+		h1
+			font-size 50px
+
+
+
+	&>*
+		display inline-block
+		margin 0
+
+		vertical-align bottom
+		white-space nowrap
+		height 60px
+		line-height 60px
+		margin-right 10px
+
+		@media screen and (min-width: 1100px)
+			height 80px
+			line-height 80px
+			margin-right 30px
+
+
+
+
+
+
+
+nav:not(:last-child):after {
+	display inline-block
+	width navSpacing
+	content navDevider
+	text-align center
+}
+
+nav {
+	display inline-block
+	margin 0
+	cursor pointer
+}
+
+section {
+	padding sectionPadding
+	height auto
+}
+
+img {
+	max-width 100%
+	max-height 100%
+}
+
+*
+	font-family Lato
+	text-decoration none
+
+p, a, td
+	@media screen and (min-width: 1100px){
+		font-size 20px
+	}
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight normal
+	margin 0
+	//margin-bottom 10px
+	font-family Anton
+}
+h2{
+	font-size 40px
+}
+
+
 // #263039
 i.gmar-Joker {
-	font-size 80px
-	transform rotate(-20deg)
+	&#logo{
+		display inline-block
+		margin-bottom 5px !important
+		font-size 80px
+		transform rotate(-20deg)
+
+		@media screen and (max-width: 1100px){
+			font-size 60px
+		}}
 
 	&#background:before {
 		position fixed
@@ -60,6 +159,7 @@ section{
 	max-width 700px
 	margin 0 auto
 	margin-top 80px
+	padding 10px !important
 }
 
 header{
@@ -119,10 +219,35 @@ a{
 	width auto
 	opacity 1
 	padding 0 5px
-	margin 5px 0
+	margin 5px -5px
 	transition all 0.3s ease-out !important
 	&:hover{
 		background white
 		color darken(#2050cc, 85%) !important
 	}
+}
+
+table{
+	border-collapse collapse
+}
+
+tr:nth-child(odd){
+	background white
+
+	//border-radius 1px
+
+*{
+		color black
+
+}
+}
+
+td{
+	padding 0 20px 5px 5px
+	padding-top 3px
+}
+thead *{
+	background none
+	height 0 !important
+	opacity 0 !important
 }

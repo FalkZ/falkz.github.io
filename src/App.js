@@ -65,7 +65,7 @@ class App extends Component {
         <Provider logger="this">
           <i className="gmar-Joker" id="background" />
           <header>
-            <i className="gmar-Joker" />
+            <i className="gmar-Joker" id="logo" />
 
             <h1>GIVE ME A REASON</h1>
 
