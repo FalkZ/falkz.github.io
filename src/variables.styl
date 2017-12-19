@@ -12,7 +12,7 @@ headingFontColor = white
 // Background
 flowBackgroundColor = #ff4455
 headerBackground = rgba(black, .9)
-bodyBackground = linear-gradient(35deg, darken(#2050cc, 75%) 0%,black 100%);
+
 // Nav
 navDevider = '|'
 navSpacing = 30px
@@ -30,6 +30,26 @@ headerHeight = 80px
 headerShadow = 0 3px 10px rgba(0, 0, 0, .16), 0 2px 12px rgba(0, 0, 0, .23)
 
 
+::-webkit-scrollbar {
+    display: none;
+}
+body{
+	background: linear-gradient(35deg, darken(#2050cc, 75%) 0%,black 100%) no-repeat;
+	background-size 'cover'
+	height: auto
+	z-index -2
+	position absolute
+	left 0
+	right 0
+}
+div.App
+	background: linear-gradient(35deg, darken(#2050cc, 75%) 0%,black 100%) no-repeat;
+	background-size 'cover'
+	height: auto
+	z-index -2
+	position absolute
+	left 0
+	right 0
 
 header
 	background rgba(black, .9)
@@ -128,6 +148,8 @@ h1, h2, h3, h4, h5, h6 {
 	font-family Anton
 }
 h2{
+	margin-top 1em
+	margin-bottom 0.5em
 	font-size 40px
 }
 
@@ -165,7 +187,6 @@ i.fa {
 }
 
 section{
-
 	padding sectionPadding
 	height auto
 	line-height: 1.5
@@ -183,16 +204,7 @@ section{
 header{
 	border-bottom 0.3px solid darken(#2050cc, 85%) !important
 }
-h2{
-	margin-top 0em !important;
-	//opacity: 1 !important;
-	/*&:after{
-		content: '';
-		border-bottom 3px solid white;
-		display: block;
-		width: 20px;
-	}*/
-}
+
 
 em{
 	//font-family Anton

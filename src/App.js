@@ -42,7 +42,7 @@ const Navigation = ({ content }) =>
     .construct({ content: "this.extract", className: "this.extract" }, {})
     .tag("nav")
     .prepare("span");
-*/
+
 const Two = () =>
   Falk.init("Two")
     .get(Falk.Navigation, 0)
@@ -64,7 +64,7 @@ const SocialMedia = () =>
     )
     .tag(Button)
     .prepare("span");
-
+*/
 class App extends Component {
   constructor(props) {
     super(props);
@@ -113,7 +113,7 @@ class App extends Component {
               content: "\n## " + section
             };
           }
-          console.log(sections);
+          //console.log(sections);
           this.setState({ sections });
         });
       });
@@ -121,8 +121,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <i className="gmar-Joker" id="background" />
+      <div className="App">
         <header>
           <i className="gmar-Joker" id="logo" />
           <a href="#home">
@@ -148,6 +147,7 @@ class App extends Component {
           <img src="https://scontent.fzrh1-1.fna.fbcdn.net/v/t1.0-9/21740477_351997008578631_5393184214769196740_n.jpg?oh=1b5fc3b8d9bc12c3993d3fc35fb87c87&amp;oe=5A703304" />
         </section>
         <Sections content={this.state.sections} />
+        <i className="gmar-Joker" id="background" />
       </div>
     );
   }
