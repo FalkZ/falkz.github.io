@@ -1,38 +1,38 @@
-import React, { Component } from "react";
-import Markdown from "react-remarkable";
-import $ from "jquery";
+import React, { Component } from 'react'
+import Markdown from 'react-remarkable'
+import $ from 'jquery'
 
 // Material Design Styles
-import "material-design-lite/material.min.css";
-import "material-design-lite/material.min.js";
+import 'material-design-lite/material.min.css'
+import 'material-design-lite/material.min.js'
 
 //import Provider from './falk/Provider'
 
 //import Mapper from './Mapper'
-import Falk, { Provider, Layout, Button, Icon } from "./falk";
+import Falk, { Provider, Layout, Button, Icon } from './falk'
 
 //styles
 
-import "./falk/styl/style.styl";
+import './falk/styl/style.styl'
 
 // auto reload
 
-import "./logo/style.css";
+import './logo/style.css'
 
 const Sections = ({ content }) =>
-  content.map((section, index) => (
-    <section key={index} id={section.href}>
-      <Markdown>{section.content}</Markdown>
-      {section.after}
-    </section>
-  ));
+	content.map((section, index) => (
+		<section key={index} id={section.href}>
+			<Markdown>{section.content}</Markdown>
+			{section.after}
+		</section>
+	))
 
 const Navigation = ({ content }) =>
-  content.map((section, index) => (
-    <Button className={"Nav"} key={index} href={"#" + section.href}>
-      {section.name}
-    </Button>
-  ));
+	content.map((section, index) => (
+		<Button className={'Nav'} key={index} href={'#' + section.href}>
+			{section.name}
+		</Button>
+	))
 
 /*Falk.init("Navigation")
     .fetch(
@@ -66,91 +66,86 @@ const SocialMedia = () =>
     .prepare("span");
 */
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      sections: [
-        {
-          name: "",
-          content: "",
-          after: (
-            <div
-              id="p2"
-              className="mdl-progress mdl-js-progress mdl-progress__indeterminate"
-            />
-          )
-        }
-      ]
-    };
-  }
-  componentWillMount() {
-    $(document).on("click", "a", function(event) {
-      //event.preventDefault();
-      try {
-        $("html, body").animate(
-          {
-            scrollTop: $($.attr(this, "href")).offset().top
-          },
-          500
-        );
-      } catch (e) {
-        console.log(e);
-      }
-    });
-    fetch(
-      "https://raw.githubusercontent.com/FalkZ/gmar-2/master/content/deutsch.md"
-    )
-      .then(response => response.text())
-      .then(text => {
-        let temp = text.split("\n## ");
-        let sections = [];
-        temp.map((section, index) => {
-          if (index !== 0) {
-            const name = section.split("\n")[0];
-            sections[index - 1] = {
-              name,
-              href: name.split("/").join("-"),
-              content: "\n## " + section
-            };
-          }
-          //console.log(sections);
-          this.setState({ sections });
-        });
-      });
-  }
+	constructor(props) {
+		super(props)
+		this.state = {
+			sections: [
+				{
+					name: '',
+					content: '',
+					after: (
+						<div id="p2" className="mdl-progress mdl-js-progress mdl-progress__indeterminate" />
+					)
+				}
+			]
+		}
+	}
+	componentWillMount() {
+		$(document).on('click', 'a', function(event) {
+			//event.preventDefault();
+			try {
+				$('html, body').animate(
+					{
+						scrollTop: $($.attr(this, 'href')).offset().top
+					},
+					500
+				)
+			} catch (e) {
+				console.log(e)
+			}
+		})
+		fetch('https://raw.githubusercontent.com/FalkZ/falkz.github.io/master/content/deutsch.md')
+			.then(response => response.text())
+			.then(text => {
+				let temp = text.split('\n## ')
+				let sections = []
+				temp.map((section, index) => {
+					if (index !== 0) {
+						const name = section.split('\n')[0]
+						sections[index - 1] = {
+							name,
+							href: name.split('/').join('-'),
+							content: '\n## ' + section
+						}
+					}
+					//console.log(sections);
+					this.setState({ sections })
+				})
+			})
+	}
 
-  render() {
-    return (
-      <div className="App">
-        <header>
-          <i className="gmar-Joker" id="logo" />
-          <a href="#home">
-            <h1>GIVE ME A REASON</h1>
-          </a>
-          <Layout right>
-            <Button href="https://www.facebook.com/GiveMeAReasonOfficial">
-              <Icon name="facebook" />
-            </Button>
-            <Button href="https://www.instagram.com/givemeareason_official/">
-              <Icon name="instagram" />
-            </Button>
-            <Button href="https://www.youtube.com/channel/UCCMwf_diPCwrFHMdAhFVBWg">
-              <Icon name="youtube" />
-            </Button>
-          </Layout>
+	render() {
+		return (
+			<div className="App">
+				<header>
+					<i className="gmar-Joker" id="logo" />
+					<a href="#home">
+						<h1>GIVE ME A REASON</h1>
+					</a>
+					<Layout right>
+						<Button href="https://www.facebook.com/GiveMeAReasonOfficial">
+							<Icon name="facebook" />
+						</Button>
+						<Button href="https://www.instagram.com/givemeareason_official/">
+							<Icon name="instagram" />
+						</Button>
+						<Button href="https://www.youtube.com/channel/UCCMwf_diPCwrFHMdAhFVBWg">
+							<Icon name="youtube" />
+						</Button>
+					</Layout>
 
-          <Layout right>
-            <Navigation content={this.state.sections} />
-          </Layout>
-        </header>
-        <section id="home">
-          <img src="https://scontent.fzrh1-1.fna.fbcdn.net/v/t1.0-9/21740477_351997008578631_5393184214769196740_n.jpg?oh=1b5fc3b8d9bc12c3993d3fc35fb87c87&amp;oe=5A703304" />
-        </section>
-        <Sections content={this.state.sections} />
-        <i className="gmar-Joker" id="background" />
-      </div>
-    );
-  }
+					<Layout right>
+						<Navigation content={this.state.sections} />
+					</Layout>
+				</header>
+				<section id="home">
+					<img src="https://scontent.fzrh1-1.fna.fbcdn.net/v/t1.0-9/21740477_351997008578631_5393184214769196740_n.jpg?oh=1b5fc3b8d9bc12c3993d3fc35fb87c87&amp;oe=5A703304" />
+				</section>
+				<Sections content={this.state.sections} />
+				<i className="gmar-Joker" id="background" />
+			</div>
+		)
+	}
 }
 
-export default App;
+export default App
