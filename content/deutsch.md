@@ -12,8 +12,8 @@ nächsten Konzerte sind im Frühling 2018 geplant.
 
 The best looking band on Earth! Naja, oder einfach die vier Jungs von **Give Me
 A Reason**, die sich die Welt zu Füssen rocken. Dabei nehmen sie sich selbst
-weit wenige ernst als ihre Musik. Ein rockiger Melodic-Punk, der geradezu nach
-einem tanzenden Publikum schreit. Und dann gibt,es da noch diese Stimme,
+weit weniger ernst als ihre Musik. Ein rockiger Melodic-Punk, der geradezu nach
+einem tanzenden Publikum schreit. Und dann gibt, es da noch diese Stimme,
 mittendrin, die die Träumer mit Inspiration versorgt. Mit stilechten
 Eigenkompositionen und einer Handvoll Covers nehmen uns die jungen Zürcher mit
 auf einen Road Trip live on Stage.
