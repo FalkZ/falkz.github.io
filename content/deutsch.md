@@ -3,10 +3,8 @@ language: Deutsch
 ---
 
 ## concert
-
-**Give Me A Reason** versteckt sich zurzeit hinter schalldichten Studiowänden,
-um baldmöglichst auch auf privaten Tonwiedergabegeräten verfügbar zu sein. Die
-nächsten Konzerte sind im Frühling 2018 geplant.
+|--------|--------|----------------------------|-------------------|----------|
+| Jan 12 | Friday | [live@gzbistro (unplugged)](https://www.facebook.com/events/575930452750798/?active_tab=about) | [GZ Leimbach] (http://www.gz-zh.ch/gz-leimbach/gz-leimbach/) | [info](https://www.facebook.com/events/575930452750798/?active_tab=about)|
 
 ## about
 
