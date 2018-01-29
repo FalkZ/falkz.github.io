@@ -22,7 +22,13 @@ import './logo/style.css'
 const Sections = ({ content }) =>
 	content.map((section, index) => (
 		<section key={index} id={section.href}>
-			<Markdown>{section.content}</Markdown>
+			<Markdown
+				options={{
+					html: true
+				}}
+			>
+				{section.content}
+			</Markdown>
 			{section.after}
 		</section>
 	))
