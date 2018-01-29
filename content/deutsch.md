@@ -6,9 +6,25 @@ language: Deutsch
 
 **upcoming**
 
-|              |              |                                    |                           |                |
-|--------------|--------------|------------------------------------|---------------------------|----------------|
-| Jan 12 | Friday | [live@gzbistro (unplugged)](https://www.facebook.com/events/575930452750798/?active_tab=about) | [GZ Leimbach](http://www.gz-zh.ch/gz-leimbach/gz-leimbach/) | [info](https://www.facebook.com/events/575930452750798/?active_tab=about)|
+
+
+## 2018
+
+|         |           |             |
+| ------- | --------- | ----------- |
+| 12. Jan | [Unplugged](https://www.facebook.com/events/575930452750798/?active_tab=about) |  [GZ Leimbach](http://www.gz-zh.ch/gz-leimbach/gz-leimbach/) |
+
+## 2017
+
+|          |                                |             |
+| -------- | ------------------------------ | ----------- |
+| 15. Sept | Open Church                    | Leimbach    |
+| 09. Sept | Skatepark Opening Münchenstein | Basel       |
+| 08. Juli | Restaurant Hüsli (Unplugged)   | Leimbach    |
+| 01. Juli | Grümpi Leimbach                | Leimbach    |
+| 26. Mai  | Vorstadt Sounds Festival       | Zürich      |
+| 20. Mai  | Unplugged                      | GZ Leimbach |
+| 13. Mai  | Lauter Festival                | Stall 6     |
 
 
 ## about
@@ -23,8 +39,8 @@ auf einen Road Trip live on Stage.
 
 **Give Me A Reason** sind
 
-|                  |
-| ---------------- |
+|                  |                |
+| ---------------- |----------------|
 | Mattia Di Paolo  | Vocals/Gitarre |
 | David Sipek      | Gitarre |
 | Marvin Trottmann | Bass |
