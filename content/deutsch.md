@@ -6,16 +6,22 @@ language: Deutsch
 
 ### upcoming
 
+
 Wir freuen uns darauf, demnächst neue Konzerte bekanntgeben zu können.
 
 ### past
+
+
 #### 2018
+
 
 |         |           |             |
 | ------- | --------- | ----------- |
 | 12. Jan | [Unplugged](https://www.facebook.com/events/575930452750798/?active_tab=about) |  [GZ Leimbach](http://www.gz-zh.ch/gz-leimbach/gz-leimbach/) |
 
+
 #### 2017
+
 
 |          |                                |             |
 | -------- | ------------------------------ | ----------- |
