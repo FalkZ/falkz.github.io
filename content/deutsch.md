@@ -4,9 +4,29 @@ language: Deutsch
 
 ## concert
 
-**Give Me A Reason** versteckt sich zurzeit hinter schalldichten Studiowänden,
-um baldmöglichst auch auf privaten Tonwiedergabegeräten verfügbar zu sein. Die
-nächsten Konzerte sind im Frühling 2018 geplant.
+### upcoming
+
+
+Wir freuen uns darauf, demnächst neue Konzerte bekanntgeben zu können.
+
+### past
+
+
+#### 2018
+
+
+|         |           |             |
+| ------- | --------- | ----------- |
+| 12. Jan | [Unplugged](https://www.facebook.com/events/575930452750798/?active_tab=about) |  [GZ Leimbach](http://www.gz-zh.ch/gz-leimbach/gz-leimbach/) |
+| <h4> 2017 </h4>|                                |             |
+| 15. Sept | Open Church                    | Leimbach    |
+| 09. Sept | Skatepark Opening Münchenstein | Basel       |
+| 08. Juli | Restaurant Hüsli (Unplugged)   | Leimbach    |
+| 01. Juli | Grümpi Leimbach                | Leimbach    |
+| 26. Mai  | Vorstadt Sounds Festival       | Zürich      |
+| 20. Mai  | Unplugged                      | GZ Leimbach |
+| 13. Mai  | Lauter Festival                | Stall 6     |
+
 
 ## about
 
@@ -20,8 +40,8 @@ auf einen Road Trip live on Stage.
 
 **Give Me A Reason** sind
 
-|                  |
-| ---------------- |
+|                  |                |
+| ---------------- |----------------|
 | Mattia Di Paolo  | Vocals/Gitarre |
 | David Sipek      | Gitarre |
 | Marvin Trottmann | Bass |
