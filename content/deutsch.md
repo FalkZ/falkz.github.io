@@ -18,13 +18,7 @@ Wir freuen uns darauf, demnächst neue Konzerte bekanntgeben zu können.
 |         |           |             |
 | ------- | --------- | ----------- |
 | 12. Jan | [Unplugged](https://www.facebook.com/events/575930452750798/?active_tab=about) |  [GZ Leimbach](http://www.gz-zh.ch/gz-leimbach/gz-leimbach/) |
-
-
-#### 2017
-
-
-|          |                                |             |
-| -------- | ------------------------------ | ----------- |
+| <h4> 2017 </h4>|                                |             |
 | 15. Sept | Open Church                    | Leimbach    |
 | 09. Sept | Skatepark Opening Münchenstein | Basel       |
 | 08. Juli | Restaurant Hüsli (Unplugged)   | Leimbach    |
