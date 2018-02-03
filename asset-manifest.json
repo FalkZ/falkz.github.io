@@ -1,10 +1,11 @@
 {
   "main.css": "static/css/main.71f58233.css",
   "main.css.map": "static/css/main.71f58233.css.map",
-  "main.js": "static/js/main.4b8427dc.js",
-  "main.js.map": "static/js/main.4b8427dc.js.map",
+  "main.js": "static/js/main.d3c44192.js",
+  "main.js.map": "static/js/main.d3c44192.js.map",
   "static/media/gmar.eot?h4o60f": "static/media/gmar.e4242c40.eot",
   "static/media/gmar.svg?h4o60f": "static/media/gmar.50ffc943.svg",
   "static/media/gmar.ttf?h4o60f": "static/media/gmar.db68cc21.ttf",
-  "static/media/gmar.woff?h4o60f": "static/media/gmar.80773e3c.woff"
+  "static/media/gmar.woff?h4o60f": "static/media/gmar.80773e3c.woff",
+  "static/media/title.jpg": "static/media/title.850341b1.jpg"
 }

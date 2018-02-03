@@ -19,6 +19,8 @@ import './falk/styl/style.styl'
 
 import './logo/style.css'
 
+import title from './title.jpg'
+
 const Sections = ({ content }) =>
 	content.map((section, index) => (
 		<section key={index} id={section.href}>
@@ -145,7 +147,7 @@ class App extends Component {
 					</Layout>
 				</header>
 				<section id="home">
-					<img src="https://scontent.fzrh1-1.fna.fbcdn.net/v/t1.0-9/21740477_351997008578631_5393184214769196740_n.jpg?oh=1b5fc3b8d9bc12c3993d3fc35fb87c87&amp;oe=5A703304" />
+					<img src={title} />
 				</section>
 				<Sections content={this.state.sections} />
 				<i className="gmar-Joker" id="background" />
