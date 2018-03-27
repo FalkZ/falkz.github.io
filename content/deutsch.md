@@ -4,21 +4,13 @@ language: Deutsch
 
 ## concert
 
-### upcoming
-|           |                                                                       |                                           |
-| --------- | --------------------------------------------------------------------- | ----------------------------------------- |
-| 17. April | [Live at La Bohème](https://www.facebook.com/events/165998394058620/) | [La Bohème Bar](http://www.laboheme.bar/) |
-
-
-
-### past
-
-
-#### 2018
-
-
 |         |           |             |
 | ------- | --------- | ----------- |
+| <h3>upcoming</h3> | | |
+| 17. April | [Live at La Bohème](https://www.facebook.com/events/165998394058620/) | [La Bohème Bar](http://www.laboheme.bar/) |
+| <h4>2018</h4> | | |
+| <h3>past</h3> | | |
+| <h4>2018</h4> | | |
 | 12. Jan | [Unplugged](https://www.facebook.com/events/575930452750798/?active_tab=about) |  [GZ Leimbach](http://www.gz-zh.ch/gz-leimbach/gz-leimbach/) |
 | <h4> 2017 </h4>|                                |             |
 | 15. Sept | Open Church                    | Leimbach    |
