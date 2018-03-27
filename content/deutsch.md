@@ -7,7 +7,6 @@ language: Deutsch
 |         |           |             |
 | ------- | --------- | ----------- |
 | <h3>upcoming</h3> | | |
-| <h4>2018</h4> | | |
 | 17. April | [Live at La Bohème](https://www.facebook.com/events/165998394058620/) | [La Bohème Bar](http://www.laboheme.bar/) |
 | <h3>past</h3> | | |
 | <h4>2018</h4> | | |
