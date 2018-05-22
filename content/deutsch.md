@@ -7,6 +7,7 @@ language: Deutsch
 |         |           |             |
 | ------- | --------- | ----------- |
 | <h3>upcoming</h3> | | |
+| 27. Mai  | [Rock the Church](https://www.kirche-enge.ch/content/e1742/e10527/)| Kirche Enge |
 | 29. Mai  | [Summerbar by VSETH](https://www.facebook.com/summerbarzuerich/)                                                                                      | Polyterrasse Zürich                                                                        |
 | 23. Juni | [Band-it](https://www.band-it.ch/bands-on-stage/bandportraits/bandportrait/?user_bandit_pi2%5BshowUid%5D=1481&cHash=f2ba297933339ae47876ef5c6b7caa0e) | [Moods Zürich](https://www.moods.club/de/infos-anreise-und-einlass/anreise-einlassregeln/) |
 | <h3>past</h3> | | |
