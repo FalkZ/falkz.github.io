@@ -1,7 +1,8 @@
 ---
 language: Deutsch
 ---
-
+## news
+SINGLE "***DEAR WEEKEND***" OUT NOW! [Check it out](https://blm.lnk.to/DearWeekend)
 ## concert
 
 |         |           |             |
