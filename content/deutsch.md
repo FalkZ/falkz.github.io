@@ -3,7 +3,7 @@ language: Deutsch
 ---
 ## news
 [SINGLE "***DEAR WEEKEND***" OUT NOW!](https://blm.lnk.to/DearWeekend)
-<iframe width="100%" height="100%" src="https://www.youtube.com/embed/PykG58v_KIk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PykG58v_KIk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## concert
 
