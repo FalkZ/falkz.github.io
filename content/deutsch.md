@@ -11,7 +11,7 @@ language: Deutsch
 | ------- | --------- | ----------- |
 | <h3>upcoming</h3> | | |
 | 23. Aug |  [Daizy May, All To Get Her & Give Me A Reason ](https://i45.ch/?d=882&t=+Daizy+May%2C+All+To+Get+Her+%26+Give+Me+A+Reason+2B+Support+TBA%29+) | [Industrie 45 (Zug)](https://i45.ch/Kontakt) |
-| 8. Sept | [Töss Rockt 9](www.kulturstreuer-toess.ch/Flyer/2018/Jahresprogramm%202018.pdf) | [Güterschuppen Töss](http://www.kulturstreuer-toess.ch/)|
+| 8. Sept | [Töss Rockt 9](http://www.kulturstreuer-toess.ch/) | [Güterschuppen Töss](http://www.kulturstreuer-toess.ch/)|
 | <h3>past</h3> | | |
 | <h4>2018</h4> | | |
 | 23. Juni | [Band-it](https://www.band-it.ch/bands-on-stage/bandportraits/bandportrait/?user_bandit_pi2%5BshowUid%5D=1481&cHash=f2ba297933339ae47876ef5c6b7caa0e) | [Moods Zürich](https://www.moods.club/de/infos-anreise-und-einlass/anreise-einlassregeln/) |
