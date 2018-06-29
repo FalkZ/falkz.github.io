@@ -40,7 +40,9 @@ mittendrin, die die Träumer mit Inspiration versorgt. Mit stilechten
 Eigenkompositionen und einer Handvoll Covers nehmen uns die jungen Zürcher mit
 auf einen Road Trip live on Stage.
 
-**Give Me A Reason** sind
+**Give Me A Reason** 
+
+are...
 
 |                  |                |
 | ---------------- |----------------|
